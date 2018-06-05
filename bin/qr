@@ -1,0 +1,25 @@
+#! /usr/bin/env node
+
+const qrec = require('qr-encoder')
+const text = process.argv[2]
+
+const black = '\033[40m  \033[0m'
+const white = '\033[107m  \033[0m'
+
+const qr = qrec.encode(text)
+const size = qr.length
+const leftPad = '  '
+const whiteLine = leftPad + new Array(size + 2).fill(white).join('')
+
+process.stdout.write('\n' + whiteLine)
+
+qr.forEach(line => {
+  process.stdout.write(`\n${leftPad}${white}`)
+  line.forEach(dot => {
+    process.stdout.write(dot === 1 ? black : white)
+  })
+  process.stdout.write(white)
+})
+
+process.stdout.write('\n' + whiteLine)
+process.stdout.write('\n\n')

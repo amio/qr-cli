@@ -1,0 +1,16 @@
+{
+  "name": "qr-cli",
+  "version": "1.0.0",
+  "description": "QR Code CLI",
+  "author": "Amio <amio.cn@gmail.com>",
+  "license": "ISC",
+  "bin": {
+    "qr": "bin/qr"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "qr-encoder": "^1.1.1"
+  }
+}
