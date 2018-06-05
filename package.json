@@ -8,7 +8,7 @@
     "qr": "bin/qr"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo 'no test specified'"
   },
   "dependencies": {
     "qr-encoder": "^1.1.1"

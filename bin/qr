@@ -3,6 +3,27 @@
 const qrec = require('qr-encoder')
 const text = process.argv[2]
 
+const help = `
+  Usage
+
+  $ qr <string-to-encode>   Encode string to qr code.
+
+  Options
+
+  -h, --help      Output usage information
+  -v, --version   Output the version number
+`
+
+switch (text) {
+  case undefined:
+  case '-h':
+    console.log(help)
+    process.exit()
+  case '-v':
+    console.log(require('../package.json').version)
+    process.exit()
+}
+
 const black = '\033[40m  \033[0m'
 const white = '\033[107m  \033[0m'
 
