@@ -10,7 +10,7 @@ npm i -g qr-cli
 
 ![](qr-screenshot.png)
 
-[npm-badge]: https://img.shields.io/npm/v/qr-cli.svg
+[npm-badge]: https://badgen.net/npm/v/qr-cli
 [npm-link]: https://www.npmjs.com/package/qr-cli
 
 [pp-badge]: https://packagephobia.now.sh/badge?p=qr-cli
