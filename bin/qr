@@ -16,9 +16,11 @@ const help = `
 
 switch (text) {
   case undefined:
+  case '--help':
   case '-h':
     console.log(help)
     process.exit()
+  case '--version':
   case '-v':
     console.log(require('../package.json').version)
     process.exit()
